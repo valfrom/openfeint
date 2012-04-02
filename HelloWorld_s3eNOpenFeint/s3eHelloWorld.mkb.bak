@@ -24,7 +24,7 @@ subprojects
 #### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
 deployments
 {
-	["Default"]
+	["Android"]
 	android-external-res='android/res'
 	android-extra-application-manifest='android/AndroidAppManifest.xml'
 	android-extra-manifest='android/AndroidManifest.xml'

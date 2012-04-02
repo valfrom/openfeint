@@ -48,7 +48,6 @@
 #include "s3e.h"
 #include "ExamplesMain.h"
 #include "s3eNOpenFeint.h"
-#include "s3eFacebook.h"
 
 static Button* g_MessageBox;
 static Button* g_NOFInitialize;
@@ -203,12 +202,12 @@ void ExampleInit()
       return;
     }
   
-  if(s3eFacebookAvailable())
-  {
-    s3eFBInit("193667878484");
-  }
-  else
-    AppendMessageColour(RED,"Could not load s3eFacebook extension");
+//  if(s3eFacebookAvailable())
+//  {
+//    s3eFBInit("193667878484");
+//  }
+//  else
+//    AppendMessageColour(RED,"Could not load s3eFacebook extension");
 //  if (!s3eIOSNotificationsAvailable())
 //  {
 //    AppendMessageColour(RED,"Extension Not Available");

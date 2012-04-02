@@ -62,11 +62,11 @@ LOAD debug/s3eNOpenFeint.os
 LOAD debug/s3eNOpenFeint_register.os
 LOAD /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a
 LOAD /Developer/Marmalade/5.2/s3e/edk/lib/android/libplaceholderplaceholderplaceholderplaceholderplaceholder.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/libc.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/libm.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/liblog.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/libs/armeabi/libstdc++.a
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/libgcc.a
+LOAD /Developer/android-ndk-r5/platforms/android-9/arch-arm/usr/lib/libc.so
+LOAD /Developer/android-ndk-r5/platforms/android-9/arch-arm/usr/lib/libm.so
+LOAD /Developer/android-ndk-r5/platforms/android-9/arch-arm/usr/lib/liblog.so
+LOAD /Developer/android-ndk-r5/sources/cxx-stl/gnu-libstdc++/libs/armeabi/libstdc++.a
+LOAD /Developer/android-ndk-r5/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/libgcc.a
                 0x000000d4                . = (0x0 + SIZEOF_HEADERS)
 
 .note.gnu.build-id
@@ -663,11 +663,11 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
  .debug_abbrev  0x000002d4      0x142 debug/s3eNOpenFeint.os
  .debug_abbrev  0x00000416      0x1c9 debug/s3eNOpenFeint_register.os
 
-.debug_line     0x00000000      0xb48
+.debug_line     0x00000000      0xa3f
  *(.debug_line)
- .debug_line    0x00000000      0x5af debug/s3eNOpenFeint_platform.os
- .debug_line    0x000005af      0x24d debug/s3eNOpenFeint.os
- .debug_line    0x000007fc      0x34c debug/s3eNOpenFeint_register.os
+ .debug_line    0x00000000      0x54a debug/s3eNOpenFeint_platform.os
+ .debug_line    0x0000054a      0x1fb debug/s3eNOpenFeint.os
+ .debug_line    0x00000745      0x2fa debug/s3eNOpenFeint_register.os
 
 .debug_frame    0x00000000      0xecc
  *(.debug_frame)
@@ -675,14 +675,14 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
  .debug_frame   0x00000664      0x400 debug/s3eNOpenFeint.os
  .debug_frame   0x00000a64      0x468 debug/s3eNOpenFeint_register.os
 
-.debug_str      0x00000000     0x6c10
+.debug_str      0x00000000     0x6bbc
  *(.debug_str)
- .debug_str     0x00000000     0x6456 debug/s3eNOpenFeint_platform.os
-                               0x6631 (size before relaxing)
- .debug_str     0x00006456       0xe3 debug/s3eNOpenFeint.os
-                                0xb1a (size before relaxing)
- .debug_str     0x00006539      0x6d7 debug/s3eNOpenFeint_register.os
-                               0x1039 (size before relaxing)
+ .debug_str     0x00000000     0x642c debug/s3eNOpenFeint_platform.os
+                               0x6607 (size before relaxing)
+ .debug_str     0x0000642c       0xce debug/s3eNOpenFeint.os
+                                0xaf0 (size before relaxing)
+ .debug_str     0x000064fa      0x6c2 debug/s3eNOpenFeint_register.os
+                               0x100f (size before relaxing)
 
 .debug_loc      0x00000000     0x151c
  *(.debug_loc)
@@ -721,7 +721,7 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 /DISCARD/
  *(.note.GNU-stack)
  *(.gnu_debuglink)
-OUTPUT(/Volumes/mac_hd_2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/community/openfeint/s3eNOpenFeint/lib/android/libs3eNOpenFeint_d.so elf32-littlearm)
+OUTPUT(/Users/valeriiivanov/Documents/workspace/KeiTaiToys/MKTT/openfeint/s3eNOpenFeint/lib/android/libs3eNOpenFeint_d.so elf32-littlearm)
 
 .ARM.attributes
                 0x00000000       0x2a

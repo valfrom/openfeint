@@ -34,11 +34,11 @@ LOAD release/s3eNOpenFeint.os
 LOAD release/s3eNOpenFeint_register.os
 LOAD /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a
 LOAD /Developer/Marmalade/5.2/s3e/edk/lib/android/libplaceholderplaceholderplaceholderplaceholderplaceholder.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/libc.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/libm.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/platforms/android-9/arch-arm/usr/lib/liblog.so
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/libs/armeabi/libstdc++.a
-LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/libgcc.a
+LOAD /Developer/android-ndk-r5/platforms/android-9/arch-arm/usr/lib/libc.so
+LOAD /Developer/android-ndk-r5/platforms/android-9/arch-arm/usr/lib/libm.so
+LOAD /Developer/android-ndk-r5/platforms/android-9/arch-arm/usr/lib/liblog.so
+LOAD /Developer/android-ndk-r5/sources/cxx-stl/gnu-libstdc++/libs/armeabi/libstdc++.a
+LOAD /Developer/android-ndk-r5/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/libgcc.a
                 0x000000d4                . = (0x0 + SIZEOF_HEADERS)
 
 .note.gnu.build-id
@@ -117,46 +117,46 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
  *(.plt)
  .plt           0x0000075c       0xe0 release/s3eNOpenFeint_platform.os
 
-.text           0x0000083c     0x2d00
+.text           0x0000083c     0x2edc
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000083c     0x1ab8 release/s3eNOpenFeint_platform.os
-                0x0000141c                _Z51s3eNOFupdateAcheivementProgressionComplete_platformPKcS0_b
-                0x00000a7c                _Z35s3eNOFhasUserApprovedFeint_platformv
-                0x00000b8c                _Z41s3eNOFsubmitDeferredAchievements_platformv
-                0x000008bc                _Z23s3eNOFshutdown_platformv
-                0x00000914                _Z44s3eNOFlaunchDashboardWithInvitePage_platformv
-                0x00000cec                _Z48s3eNOFlaunchDashboardWithSwitchUserPage_platformv
-                0x00000ea4                _Z26s3eNOFachievement_platformP17s3eNOFAchievementPKc
-                0x00000864                _Z38s3eNOFsetDashboardOrientation_platform28s3eNOFUIInterfaceOrientation
+                0x000015ec                _Z51s3eNOFupdateAcheivementProgressionComplete_platformPKcS0_b
+                0x00002164                _Z35s3eNOFhasUserApprovedFeint_platformv
+                0x000013c8                _Z41s3eNOFsubmitDeferredAchievements_platformv
+                0x00001af0                _Z23s3eNOFshutdown_platformv
+                0x00001cac                _Z44s3eNOFlaunchDashboardWithInvitePage_platformv
+                0x00001d5c                _Z48s3eNOFlaunchDashboardWithSwitchUserPage_platformv
+                0x00001518                _Z26s3eNOFachievement_platformP17s3eNOFAchievementPKc
+                0x000019e8                _Z38s3eNOFsetDashboardOrientation_platform28s3eNOFUIInterfaceOrientation
                 0x0000083c                _Z31s3eNOpenFeintTerminate_platformv
-                0x00001110                _Z48s3eNOFlaunchDashboardWithSpecificInvite_platformPKc
-                0x000009c4                _Z30s3eNOFlaunchDashboard_platformv
-                0x000019e8                _Z26s3eNOpenFeintInit_platformv
-                0x000016ec                _Z72s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText_platformPKcS0_S0_S0_
-                0x000017d4                _Z10getCStringP8_jstring
-                0x00000f9c                _Z73s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platformPKc
-                0x00001604                _Z30s3eNOFsubmitHighScore_platformPKcS0_S0_S0_
-                0x00000df4                _Z48s3eNOFlaunchDashboardWithChallengesPage_platformv
-                0x00001300                _Z40s3eNOFachievementUnlockAndDefer_platformPKc
-                0x0000096c                _Z31s3eNOFdismissDashboard_platformv
-                0x0000137c                _Z25s3eNewMessageBox_platformPKcS0_
-                0x00000b34                _Z27s3eNOFachievements_platformP11s3eNOFArray
-                0x00001284                _Z32s3eNOFachievementUnlock_platformPKc
-                0x00000adc                _Z46s3eNOFdownloadAllChallengeDefinitions_platformv
-                0x00001094                _Z48s3eNOFdownloadChallengeDefinitionWithId_platformPKc
-                0x00000f20                _Z38s3eNOFdisplayAndSendChallenge_platformP25s3eNOFChallengeDefinitionPKcPK19s3eNOFChallengeData
-                0x0000118c                _Z47s3eNOFlaunchDashboardWithHighscorePage_platformPKc
-                0x00001208                _Z47s3eNOFlaunchDashboardWithiPurchasePage_platformPKc
-                0x00000d9c                _Z49s3eNOFlaunchDashboardWithFindFriendsPage_platformv
-                0x00000c94                _Z57s3eNOFlaunchDashboardWithListGlobalChatRoomsPage_platformv
-                0x000014c4                _Z49s3eNOFchallengeDisplayCompletionWithData_platformP19s3eNOFChallengeDataPKcS2_
-                0x00001018                _Z42s3eNOFchallengeCompleteWithResult_platform21s3eNOFChallengeResultPKc
-                0x00000d44                _Z49s3eNOFlaunchDashboardWithWhosPlayingPage_platformv
-                0x000018b8                _Z39s3eNOFinitializeWithProductKey_platformPKcS0_S0_PK11s3eNOFArray
-                0x00000be4                _Z54s3eNOFlaunchDashboardWithListLeaderboardsPage_platformv
-                0x00000e4c                _Z50s3eNOFlaunchDashboardWithAchievementsPage_platformv
-                0x00000c3c                _Z44s3eNOFlaunchDashboardWithForumsPage_platformv
-                0x00000a1c                _Z23s3eNOFisOnline_platformv
+                0x00001c30                _Z48s3eNOFlaunchDashboardWithSpecificInvite_platformPKc
+                0x00001a98                _Z30s3eNOFlaunchDashboard_platformv
+                0x00000a28                _Z26s3eNOpenFeintInit_platformv
+                0x00001b48                _Z72s3eNOFlaunchDashboardWithSocialNotificationWithPrepopulatedText_platformPKcS0_S0_S0_
+                0x00001210                _Z10getCStringP8_jstring
+                0x0000134c                _Z73s3eNOFapplicationDidRegisterForRemoteNotificationsWithDeviceToke_platformPKc
+                0x00001694                _Z30s3eNOFsubmitHighScore_platformPKcS0_S0_S0_
+                0x00001f38                _Z48s3eNOFlaunchDashboardWithChallengesPage_platformv
+                0x00001420                _Z40s3eNOFachievementUnlockAndDefer_platformPKc
+                0x00001a40                _Z31s3eNOFdismissDashboard_platformv
+                0x00002064                _Z25s3eNewMessageBox_platformPKcS0_
+                0x00001594                _Z27s3eNOFachievements_platformP11s3eNOFArray
+                0x0000149c                _Z32s3eNOFachievementUnlock_platformPKc
+                0x00001914                _Z46s3eNOFdownloadAllChallengeDefinitions_platformv
+                0x00001898                _Z48s3eNOFdownloadChallengeDefinitionWithId_platformPKc
+                0x0000196c                _Z38s3eNOFdisplayAndSendChallenge_platformP25s3eNOFChallengeDefinitionPKcPK19s3eNOFChallengeData
+                0x00001fe8                _Z47s3eNOFlaunchDashboardWithHighscorePage_platformPKc
+                0x00001db4                _Z47s3eNOFlaunchDashboardWithiPurchasePage_platformPKc
+                0x00001ee0                _Z49s3eNOFlaunchDashboardWithFindFriendsPage_platformv
+                0x00001e30                _Z57s3eNOFlaunchDashboardWithListGlobalChatRoomsPage_platformv
+                0x0000181c                _Z42s3eNOFchallengeCompleteWithResult_platform21s3eNOFChallengeResultPKc
+                0x0000177c                _Z49s3eNOFchallengeDisplayCompletionWithData_platformP19s3eNOFChallengeDataPKcS2_
+                0x00001e88                _Z49s3eNOFlaunchDashboardWithWhosPlayingPage_platformv
+                0x000021c4                _Z39s3eNOFinitializeWithProductKey_platformPKcS0_S0_PK11s3eNOFArray
+                0x000012f4                _Z54s3eNOFlaunchDashboardWithListLeaderboardsPage_platformv
+                0x00001f90                _Z50s3eNOFlaunchDashboardWithAchievementsPage_platformv
+                0x00001d04                _Z44s3eNOFlaunchDashboardWithForumsPage_platformv
+                0x00002104                _Z23s3eNOFisOnline_platformv
  .text._ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
                 0x000022f4       0x1c release/s3eNOpenFeint_platform.os
                 0x000022f4                _ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
@@ -206,23 +206,23 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
                 0x00002458                s3eNOFchallengeCompleteWithResult
                 0x00002558                s3eNOFlaunchDashboardWithListGlobalChatRoomsPage
                 0x00002548                s3eNOFlaunchDashboardWithiPurchasePage
- .text          0x000025f8      0xeb4 release/s3eNOpenFeint_register.os
-                0x00002fa8                s3eNOpenFeintUnRegister
-                0x00002fdc                s3eNOpenFeintRegister
+ .text          0x000025f8     0x1090 release/s3eNOpenFeint_register.os
+                0x00003168                s3eNOpenFeintUnRegister
+                0x0000319c                s3eNOpenFeintRegister
                 0x000025f8                s3eNOpenFeintGetErrorString
                 0x00002600                _Z24s3eNOpenFeintRegisterExtv
-                0x00003014                s3eNOpenFeintGetError
-                0x0000302c                RegisterExt
- .text          0x000034ac        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x000031d4                s3eNOpenFeintGetError
+                0x000031ec                RegisterExt
+ .text          0x00003688        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .text.s3eEdkThreadRunOnOSAsync
-                0x000034ac       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x000034ac                s3eEdkThreadRunOnOSAsync
+                0x00003688       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003688                s3eEdkThreadRunOnOSAsync
  .text.s3eEdkThreadRunOnOS
-                0x000034dc       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x000034dc                s3eEdkThreadRunOnOS
+                0x000036b8       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x000036b8                s3eEdkThreadRunOnOS
  .text.s3eEdkErrorSetString
-                0x0000350c       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x0000350c                s3eEdkErrorSetString
+                0x000036e8       0x30 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x000036e8                s3eEdkErrorSetString
  *(.gnu.warning)
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
@@ -235,39 +235,39 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 
 .fini
  *(.fini)
-                0x0000353c                PROVIDE (__etext, .)
-                0x0000353c                PROVIDE (_etext, .)
-                0x0000353c                PROVIDE (etext, .)
+                0x00003718                PROVIDE (__etext, .)
+                0x00003718                PROVIDE (_etext, .)
+                0x00003718                PROVIDE (etext, .)
 
-.rodata         0x0000353c      0x5d4
+.rodata         0x00003718      0x5d4
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.str1.4
-                0x0000353c      0x5d4 release/s3eNOpenFeint_platform.os
+                0x00003718      0x5d4 release/s3eNOpenFeint_platform.os
  .rodata.str1.4
                 0x00000000       0x10 release/s3eNOpenFeint_register.os
 
 .rodata1
  *(.rodata1)
 
-.ARM.extab      0x00003b10       0x24
+.ARM.extab      0x00003cec       0x24
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.text.s3eEdkThreadRunOnOSAsync
-                0x00003b10        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003cec        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.extab.text.s3eEdkThreadRunOnOS
-                0x00003b1c        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003cf8        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.extab.text.s3eEdkErrorSetString
-                0x00003b28        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00003b34                __exidx_start = .
+                0x00003d04        0xc /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003d10                __exidx_start = .
 
-.ARM.exidx      0x00003b34       0x18
+.ARM.exidx      0x00003d10       0x18
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
  .ARM.exidx.text.s3eEdkThreadRunOnOSAsync
-                0x00003b34        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003d10        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.exidx.text.s3eEdkThreadRunOnOS
-                0x00003b3c        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003d18        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .ARM.exidx.text.s3eEdkErrorSetString
-                0x00003b44        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00003b4c                __exidx_end = .
+                0x00003d20        0x8 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00003d28                __exidx_end = .
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -277,8 +277,8 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
-                0x00003b4c                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
-                0x00004b4c                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+                0x00003d28                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00004d28                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
 
 .eh_frame
  *(.eh_frame)
@@ -321,58 +321,58 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 .jcr
  *(.jcr)
 
-.data.rel.ro    0x00004b4c        0xc
+.data.rel.ro    0x00004d28        0xc
  *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
  .data.rel.ro.local
-                0x00004b4c        0xc release/s3eNOpenFeint_platform.os
+                0x00004d28        0xc release/s3eNOpenFeint_platform.os
  *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
 
-.dynamic        0x00004b58       0xb8
+.dynamic        0x00004d34       0xb8
  *(.dynamic)
- .dynamic       0x00004b58       0xb8 release/s3eNOpenFeint_platform.os
-                0x00004b58                _DYNAMIC
-                0x00004c10                . = (. DATA_SEGMENT_RELRO_END 0x0)
+ .dynamic       0x00004d34       0xb8 release/s3eNOpenFeint_platform.os
+                0x00004d34                _DYNAMIC
+                0x00004dec                . = (. DATA_SEGMENT_RELRO_END 0x0)
 
-.got            0x00004c10       0xe0
+.got            0x00004dec       0xe0
  *(.got.plt)
- .got.plt       0x00004c10       0x50 release/s3eNOpenFeint_platform.os
-                0x00004c10                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x00004dec       0x50 release/s3eNOpenFeint_platform.os
+                0x00004dec                _GLOBAL_OFFSET_TABLE_
  *(.got)
- .got           0x00004c60       0x90 release/s3eNOpenFeint_platform.os
+ .got           0x00004e3c       0x90 release/s3eNOpenFeint_platform.os
 
-.data           0x00004cf0        0x4
-                0x00004cf0                __data_start = .
+.data           0x00004ecc        0x4
+                0x00004ecc                __data_start = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x00004cf0        0x4 release/s3eNOpenFeint_platform.os
- .data          0x00004cf4        0x0 release/s3eNOpenFeint.os
- .data          0x00004cf4        0x0 release/s3eNOpenFeint_register.os
- .data          0x00004cf4        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+ .data          0x00004ecc        0x4 release/s3eNOpenFeint_platform.os
+ .data          0x00004ed0        0x0 release/s3eNOpenFeint.os
+ .data          0x00004ed0        0x0 release/s3eNOpenFeint_register.os
+ .data          0x00004ed0        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
 
 .data1
  *(.data1)
-                0x00004cf4                _edata = .
-                0x00004cf4                PROVIDE (edata, .)
-                0x00004cf4                __bss_start = .
-                0x00004cf4                __bss_start__ = .
+                0x00004ed0                _edata = .
+                0x00004ed0                PROVIDE (edata, .)
+                0x00004ed0                __bss_start = .
+                0x00004ed0                __bss_start__ = .
 
-.bss            0x00004cf4       0x90
+.bss            0x00004ed0       0x90
  *(.dynbss)
  .dynbss        0x00000000        0x0 release/s3eNOpenFeint_platform.os
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00004cf4       0x90 release/s3eNOpenFeint_platform.os
- .bss           0x00004d84        0x0 release/s3eNOpenFeint.os
- .bss           0x00004d84        0x0 release/s3eNOpenFeint_register.os
- .bss           0x00004d84        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+ .bss           0x00004ed0       0x90 release/s3eNOpenFeint_platform.os
+ .bss           0x00004f60        0x0 release/s3eNOpenFeint.os
+ .bss           0x00004f60        0x0 release/s3eNOpenFeint_register.os
+ .bss           0x00004f60        0x0 /Developer/Marmalade/5.2/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  *(COMMON)
-                0x00004d84                . = ALIGN ((. != 0x0)?0x4:0x1)
-                0x00004d84                _bss_end__ = .
-                0x00004d84                __bss_end__ = .
-                0x00004d84                . = ALIGN (0x4)
-                0x00004d84                . = ALIGN (0x4)
-                0x00004d84                __end__ = .
-                0x00004d84                _end = .
-                0x00004d84                PROVIDE (end, .)
-                0x00004d84                . = DATA_SEGMENT_END (.)
+                0x00004f60                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00004f60                _bss_end__ = .
+                0x00004f60                __bss_end__ = .
+                0x00004f60                . = ALIGN (0x4)
+                0x00004f60                . = ALIGN (0x4)
+                0x00004f60                __end__ = .
+                0x00004f60                _end = .
+                0x00004f60                PROVIDE (end, .)
+                0x00004f60                . = DATA_SEGMENT_END (.)
 
 .stab
  *(.stab)
@@ -465,7 +465,7 @@ LOAD /Volumes/mac_hd_2/Developer/android-ndk-r6b/toolchains/arm-linux-androideab
 /DISCARD/
  *(.note.GNU-stack)
  *(.gnu_debuglink)
-OUTPUT(/Volumes/mac_hd_2/faizan/Documents/myprojects/Mobile/iOS/Marmalalde/community/openfeint/s3eNOpenFeint/lib/android/libs3eNOpenFeint.so elf32-littlearm)
+OUTPUT(/Users/valeriiivanov/Documents/workspace/KeiTaiToys/MKTT/openfeint/s3eNOpenFeint/lib/android/libs3eNOpenFeint.so elf32-littlearm)
 
 .ARM.attributes
                 0x00000000       0x2a
