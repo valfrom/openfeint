@@ -40,4 +40,8 @@ deployments
     android-external-jars="lib/android/s3eNOpenFeint.jar"
     android-external-jars="source/android/OpenFeint.jar"
     android-so="lib/android/libs3eNOpenFeint.so"
+    android-external-res='android/res'
+    android-extra-application-manifest='android/AndroidAppManifest.xml'
+    android-extra-manifest='android/AndroidManifest.xml'
+
 }
